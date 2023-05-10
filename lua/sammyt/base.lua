@@ -34,11 +34,17 @@ vim.wo.signcolumn = 'yes'
 vim.o.termguicolors = true
 vim.opt.termguicolors = true
 
+--
 -- Set colorscheme
-vim.g.nord_borders = true
-vim.g.nord_contrast = true
-vim.g.nord_italic = false
-vim.cmd[[colorscheme nord]]
+--
+-- nord scheme specifics
+-- vim.g.nord_borders = true
+-- vim.g.nord_contrast = true
+-- vim.g.nord_italic = false
+-- vim.cmd[[colorscheme tokyonight]]
+--
+vim.cmd[[colorscheme tokyonight]]
+
 
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
