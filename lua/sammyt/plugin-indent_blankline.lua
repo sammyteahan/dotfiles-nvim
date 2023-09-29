@@ -1,9 +1,11 @@
 -- Enable `lukas-reineke/indent-blankline.nvim`
 -- See `:help indent_blankline.txt`
-require('indent_blankline').setup {
-  char = '┊',
-  show_trailing_blankline_indent = false,
-  -- show_current_context = true,
-  -- show_current_context_start = true,
+require('ibl').setup {
+  debounce = 300,
+  indent = {
+    -- alternatived found in :help docs
+    char = '┊',
+  },
+  -- highlight current variable scope
+  scope = { enabled = true }
 }
-
