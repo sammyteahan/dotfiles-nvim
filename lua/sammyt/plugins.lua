@@ -57,6 +57,8 @@ require('packer').startup(function(use)
   use 'navarasu/onedark.nvim' -- Theme inspired by Atom
   use 'shaunsingh/nord.nvim' -- Nord theme ported to Lua
   use 'folke/tokyonight.nvim' -- tokyonight
+  use "rebelot/kanagawa.nvim" -- kanagawa
+  use "ellisonleao/gruvbox.nvim" --  gruvbox
 
   use 'nvim-lualine/lualine.nvim' -- Fancier statusline
   use 'lukas-reineke/indent-blankline.nvim' -- Add indentation guides even on blank lines
