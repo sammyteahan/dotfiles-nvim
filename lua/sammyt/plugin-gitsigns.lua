@@ -15,6 +15,6 @@ require('gitsigns').setup {
     delay = 0,
     ignore_whitespace = false,
   },
-  current_line_blame_formatter = '<author_time:%Y-%m> - <abbrev_sha>',
+  -- current_line_blame_formatter = '<author_time:%Y-%m> - <abbrev_sha>',
 }
 
