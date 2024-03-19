@@ -58,6 +58,7 @@ require('packer').startup(function(use)
   use 'shaunsingh/nord.nvim' -- Nord theme ported to Lua
   use 'folke/tokyonight.nvim' -- tokyonight
   use "rebelot/kanagawa.nvim" -- kanagawa
+  use { "catppuccin/nvim", as = "catppuccin" } -- catppuccin
   use "ellisonleao/gruvbox.nvim" --  gruvbox
 
   use 'nvim-lualine/lualine.nvim' -- Fancier statusline
