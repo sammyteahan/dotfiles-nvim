@@ -44,7 +44,7 @@ vim.opt.termguicolors = true
 --
 -- vim.cmd[[colorscheme kanagawa]]
 -- vim.cmd[[colorscheme tokyonight]]
-vim.cmd[[colorscheme catppuccin-macchiato]]
+vim.cmd [[colorscheme catppuccin-macchiato]]
 
 
 -- Set completeopt to have a better completion experience
