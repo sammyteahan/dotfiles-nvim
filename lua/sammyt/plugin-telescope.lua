@@ -8,6 +8,7 @@ require('telescope').setup {
       "ios/build",
       "venv", -- python virtual environments
       "_build", -- elixir build artifacts
+      "vendor", -- laravel deps
     },
     mappings = {
       i = {

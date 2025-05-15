@@ -102,10 +102,11 @@ local servers = {
   -- clangd = {},
   -- pyright = {},
   -- rust_analyzer = {},
-  tsserver = {},
+  -- tsserver = {},
+  ts_ls = {}, -- tsserver above was renamed to ts_ls
   elixirls = {},
   pylsp = {},
-  gopls = {},
+  -- gopls = {}, -- been having issues with this
   lua_ls = {
     Lua = {
       workspace = { checkThirdParty = false },
@@ -138,15 +139,19 @@ mason_lspconfig.setup {
   ensure_installed = vim.tbl_keys(servers),
 }
 
-mason_lspconfig.setup_handlers {
-  function(server_name)
-    require('lspconfig')[server_name].setup {
-      capabilities = capabilities,
-      on_attach = on_attach,
-      settings = servers[server_name],
-    }
-  end,
-}
+--
+-- This seems to no longer be necessary or valid.
+-- Just toss everything in the setup above instead of this
+--
+-- mason_lspconfig.setup_handlers {
+--   function(server_name)
+--     require('lspconfig')[server_name].setup {
+--       capabilities = capabilities,
+--       on_attach = on_attach,
+--       settings = servers[server_name],
+--     }
+--   end,
+-- }
 
 -- Turn on lsp status information
 require('fidget').setup()

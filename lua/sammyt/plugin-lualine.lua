@@ -3,7 +3,7 @@
 require('lualine').setup {
   options = {
     icons_enabled = false,
-    theme = 'tokyonight',
+    theme = 'catppuccin-macchiato',
     component_separators = '|',
     section_separators = '',
   },

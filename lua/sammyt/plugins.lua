@@ -53,7 +53,7 @@ require('packer').startup(function(use)
   use 'tpope/vim-rhubarb'
   use 'lewis6991/gitsigns.nvim'
 
-  -- color themes
+  -- Color themes
   use 'navarasu/onedark.nvim' -- Theme inspired by Atom
   use 'shaunsingh/nord.nvim' -- Nord theme ported to Lua
   use 'folke/tokyonight.nvim' -- tokyonight
@@ -73,8 +73,30 @@ require('packer').startup(function(use)
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make', cond = vim.fn.executable 'make' == 1 }
   use 'nvim-tree/nvim-tree.lua' -- File explorer
 
+  -- Typescript tools: see https://github.com/pmizio/typescript-tools.nvim
+  use {
+    "pmizio/typescript-tools.nvim",
+    requires = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+    config = function()
+      require("typescript-tools").setup {}
+    end,
+  }
+
+  -- CodeCompanion: see https://codecompanion.olimorris.dev
+  use({
+    "olimorris/codecompanion.nvim",
+    config = function()
+      require("codecompanion").setup()
+    end,
+    requires = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    }
+  })
+
   -- Add custom plugins to packer from ~/.config/nvim/lua/custom/plugins.lua
   local has_plugins, plugins = pcall(require, 'custom.plugins')
+
   if has_plugins then
     plugins(use)
   end
