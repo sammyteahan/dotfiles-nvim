@@ -59,7 +59,8 @@ require('packer').startup(function(use)
   use 'folke/tokyonight.nvim' -- tokyonight
   use "rebelot/kanagawa.nvim" -- kanagawa
   use { "catppuccin/nvim", as = "catppuccin" } -- catppuccin
-  use "ellisonleao/gruvbox.nvim" --  gruvbox
+  -- use "ellisonleao/gruvbox.nvim" --  gruvbox (keeps breaking)
+  use { "neanias/everforest-nvim" } -- everforest
 
   use 'nvim-lualine/lualine.nvim' -- Fancier statusline
   use 'lukas-reineke/indent-blankline.nvim' -- Add indentation guides even on blank lines

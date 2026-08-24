@@ -42,6 +42,11 @@ vim.keymap.set('n', '<leader>sw', require('telescope.builtin').grep_string, { de
 vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
 
 --
+-- CodeCompanion keymaps
+--
+vim.keymap.set('n', '<leader>ai', require('codecompanion').actions, { desc = '[A][I]' })
+
+--
 -- Nvim Tree keymaps
 --
 vim.keymap.set('n', '<C-O>', ':NvimTreeToggle<CR>', { silent = true })

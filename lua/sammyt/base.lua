@@ -10,8 +10,9 @@ vim.o.incsearch = true
 vim.wo.number = true
 vim.wo.relativenumber = true
 
--- Open vertical splits to the right by default
--- vim.o.splitright = true
+-- Configure how new splits should be opened
+vim.o.splitright = true
+vim.o.splitbelow = true
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
@@ -42,9 +43,10 @@ vim.opt.termguicolors = true
 -- vim.g.nord_contrast = true
 -- vim.g.nord_italic = false
 --
--- vim.cmd[[colorscheme kanagawa]]
-vim.cmd[[colorscheme catppuccin-macchiato]]
--- vim.cmd[[colorscheme tokyonight]]
+vim.cmd[[colorscheme tokyonight-storm]]
+-- vim.cmd[[colorscheme everforest]]
+-- vim.cmd[[colorscheme catppuccin-macchiato]]
+-- vim.cmd[[colorscheme tokyonight-day]]
 
 
 -- Set completeopt to have a better completion experience
